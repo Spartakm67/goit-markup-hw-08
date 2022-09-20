@@ -1,0 +1,34 @@
+.page-header {
+  border: 1px solid #ececec;
+}
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo blu part */
+.logo__header {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* Logo black part */
+.logo__header_studio {
+  color: var(--logo-header-color);
+}
+
+.list-header {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
+.phone__svg,
+.mail__svg {
+  fill: currentColor;
+  margin-right: 10px;
+}
