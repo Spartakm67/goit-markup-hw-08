@@ -1,5 +1,5 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-Module #7. The Homework #07
+Module #8. The Homework #08
 
-https://spartakm67.github.io/goit-markup-hw-07/
+https://spartakm67.github.io/goit-markup-hw-08/
