@@ -4,6 +4,7 @@
 .page-header {
   padding-top: 10px;
   padding-bottom: 10px;
+  border: 1px solid var(--border-header-color);
 }
 
 .menu {
@@ -13,14 +14,6 @@
 .list-header {
   display: none;
 }
-
-// .page-header__mail {
-//   display: none;
-// }
-
-// .page-header__phone {
-//   display: none;
-// }
 
 .page-header__container {
   display: flex;
@@ -39,9 +32,6 @@
   width: 40px;
   height: 40px;
 }
-// .page-header {
-//   border: 1px solid #ececec;
-// }
 
 // .page-navigation {
 //   display: flex;

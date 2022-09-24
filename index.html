@@ -34,7 +34,7 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="open-mobile-menu-btn"><span class="visually-hidden">Меню</span>
+            <button type="button" class="open-mobile-menu-btn" data-menu-open><span class="visually-hidden">Меню</span>
                 <svg class="open-mobile-menu-btn__icon">
                     <use href="./images/sprite.svg#icon-burger"></use>
                 </svg>
@@ -53,6 +53,24 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close><span
+                        class="visually-hidden">Закрити
+                        моб
+                        меню</span>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="list">
+                    <li><a href="" class="link">link-1</a></li>
+                    <li><a href="" class="link">link-2</a></li>
+                    <li><a href="" class="link">link-3</a></li>
+                    <li><a href="" class="link">link-4</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -456,6 +474,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
