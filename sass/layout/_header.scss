@@ -26,6 +26,10 @@
   border: none;
   background-color: transparent;
   padding: 0;
+
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .open-mobile-menu-btn__icon {

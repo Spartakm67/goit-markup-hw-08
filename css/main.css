@@ -138,7 +138,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -262,6 +262,9 @@ body {
   border: none;
   background-color: transparent;
   padding: 0;
+}
+.open-mobile-menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 .open-mobile-menu-btn__icon {

@@ -9,7 +9,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition-dur-and-func);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
 
   &.is-open {
     opacity: 1;
