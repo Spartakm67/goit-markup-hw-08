@@ -77,8 +77,12 @@
   margin-bottom: 64px;
 }
 
-.contacts-item:not(:last-child) {
-  margin-bottom: 32px;
+.contacts-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .mobile-menu__phone {
@@ -109,7 +113,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 
-  &::after {
+  &.after::after {
     content: "";
     margin-left: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
