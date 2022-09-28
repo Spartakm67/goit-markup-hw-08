@@ -1,8 +1,23 @@
-.clients-list {
-  display: flex;
-  column-gap: 30px;
-  justify-content: center;
+.clients-section {
+  margin-bottom: 60px;
 }
+
+.clients-section__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+// .clients-section__list-item {
+//   width: calc((100% - 60px) / 2);
+// }
+
+// .clients-section__list {
+//   display: flex;
+//   column-gap: 30px;
+//   justify-content: center;
+// }
 
 .clients-list-item-link {
   display: flex;

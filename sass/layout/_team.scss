@@ -1,17 +1,16 @@
-.section-four {
+.team-section {
   background-color: var(--background-four-color);
+  padding: 60px 0;
+  margin-bottom: 60px;
 }
-.cards-list {
-  display: flex;
-  gap: 30px;
-}
-.team-card {
+
+.team-section__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-text-color-theme-dark);
 }
-.section-four-manager {
+.team-section__manager {
   @include font(500, 16px, 19px);
   text-align: center;
   letter-spacing: 0.03em;
@@ -20,10 +19,15 @@
   color: var(--primary-text-color-theme-light);
 }
 
-.section-four-position {
+.team-section__position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
+
+// .cards-list {
+//   display: flex;
+//   gap: 30px;
+// }
