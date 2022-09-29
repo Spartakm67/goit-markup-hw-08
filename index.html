@@ -397,9 +397,9 @@
     <footer class="footer">
 
         <div class="container footer__container">
-            <div class="footer-list-address">
+            <div class="footer__list-address">
                 <a href="./index.html" class="logo link">Web<span class="logo logo__footer-studio">Studio</span></a>
-                <address class="address-footer address">
+                <address class="footer__address address">
                     <ul class="list">
                         <li class="footer-li"><a class="address-link link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9 "
                                 target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
@@ -443,19 +443,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-list-input">
-                <form class="footer-form">
-                    <label>
-                        <span class="footer-list-input-title">Підпишіться на розсилку</span>
-                        <input type="email" name="user_email" class="footer-email-input" placeholder="E-mail">
-                    </label>
-                    <button type="submit" class="footer-form-submit">Підписатися
-                        <svg class="footer-submit-icon" width="24px" height="24px">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+
+            <!-- <div class="footer-list-input"> -->
+
+            <form class="footer-form">
+
+                <label class="footer-form__label">
+                    <span class="footer-list-input-title">Підпишіться на розсилку</span>
+                    <input type="email" name="user_email" class="footer-email-input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="footer-form-submit">Підписатися
+                    <svg class="footer-submit-icon" width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+
+            </form>
+
+            <!-- </div> -->
         </div>
 
     </footer>
