@@ -29,6 +29,13 @@
 .footer__address {
   margin-top: 20px;
 }
+
+.footer__adress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .address-link {
   font-size: 14px;
   line-height: 1.71px;
@@ -52,21 +59,28 @@
   line-height: 1.14;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
 }
 .link-footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.footer-list-social {
+  margin-bottom: 60px;
+}
+
 .social-list-icon-footer {
   fill: var(--primary-text-color-theme-dark);
 }
 .footer .social-list {
   padding-bottom: 0;
 }
-// .footer-list-input {
-//     margin-left: auto;
-// }
+.footer-list-input {
+  width: 100%;
+  // margin-left: auto;
+}
 .footer-list-input-title {
   display: block;
   font-weight: 700;
@@ -106,6 +120,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+}
+
+.footer-form__label {
+  margin-bottom: 20px;
 }
 
 .footer-form-submit {

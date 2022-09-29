@@ -550,6 +550,12 @@ body {
   margin-top: 20px;
 }
 
+.footer__adress-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .address-link {
   font-size: 14px;
   line-height: 1.71px;
@@ -573,6 +579,7 @@ body {
   line-height: 1.14;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
 }
@@ -581,12 +588,20 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.footer-list-social {
+  margin-bottom: 60px;
+}
+
 .social-list-icon-footer {
   fill: var(--primary-text-color-theme-dark);
 }
 
 .footer .social-list {
   padding-bottom: 0;
+}
+
+.footer-list-input {
+  width: 100%;
 }
 
 .footer-list-input-title {
@@ -626,6 +641,10 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__label {
+  margin-bottom: 20px;
 }
 
 .footer-form-submit {
@@ -753,9 +772,10 @@ body {
   width: 100%;
   height: 100%;
   z-index: 100;
-  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -764,9 +784,26 @@ body {
 }
 
 .modal {
+  position: relative;
+  padding: 40px;
   background-color: var(--primary-text-color-theme-dark);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .modal-close-btn {
@@ -901,19 +938,31 @@ body {
 
 .modal-form-own-checkbox-desc {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secodary-text-color-theme-light);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-own-checkbox-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-own-checkbox-user {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-own-checkbox-user {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-submit {
