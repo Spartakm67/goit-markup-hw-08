@@ -488,6 +488,13 @@ body {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-section__list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
 .clients-section {
   margin-bottom: 60px;
 }
@@ -756,8 +763,10 @@ body {
   }
 }
 
-.portfolio-item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-item-title {

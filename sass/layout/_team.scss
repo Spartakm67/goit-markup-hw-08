@@ -27,7 +27,9 @@
   margin-bottom: 16px;
 }
 
-// .cards-list {
-//   display: flex;
-//   gap: 30px;
-// }
+.team-section__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
+}

@@ -83,7 +83,9 @@
   }
 }
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-item-title {
   padding: 20px 24px;
