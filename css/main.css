@@ -700,7 +700,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .filters {
-    max-width: 326px;
+    max-width: 342px;
     margin-top: 60px;
   }
 }
@@ -716,7 +716,7 @@ body {
 @media screen and (max-width: 767px) {
   .filters__list {
     display: inline;
-    gap: 8px;
+    line-height: 0;
   }
 }
 
@@ -739,6 +739,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .open-btn {
+    margin-right: 4px;
     margin-bottom: 15px;
   }
 }
