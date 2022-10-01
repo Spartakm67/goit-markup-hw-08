@@ -1,5 +1,6 @@
 .list-portfolio {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: var(--secodary-text-color-theme-light);
   transition: box-shadow var(--transition-dur-and-func);
 
@@ -83,11 +84,16 @@
   }
 }
 .portfolio-item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
   @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
   }
 }
 .portfolio-item-title {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }

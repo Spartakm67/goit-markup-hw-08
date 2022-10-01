@@ -23,23 +23,27 @@
   letter-spacing: 0.03em;
 }
 
+// .features-list__item-four {
+//   margin-bottom: 60px;
+// }
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .features-list__item {
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
-
-.features-list__item-four {
-  margin-bottom: 60px;
-}
-
-// .features-list {
-//   display: flex;
-// }
-
-// .features-list__item {
-//   width: 270px;
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
