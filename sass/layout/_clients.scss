@@ -1,5 +1,5 @@
 .clients-section {
-  margin-bottom: 60px;
+  padding: 60px 0;
 }
 
 .clients-section__list {
@@ -7,24 +7,23 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  // flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients-section__list-item {
-  // width: calc((100% - 60px) / 2);
-  width: calc((100% - 30px) / 2);
-}
+  flex-basis: calc((100% - 30px) / 2);
 
-.clients-section__list {
-  display: flex;
-  column-gap: 30px;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list-item-link {
   display: flex;
   width: 100%;
-  // width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;

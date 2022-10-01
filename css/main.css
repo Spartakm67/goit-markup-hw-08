@@ -82,12 +82,19 @@ body {
   letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -457,9 +464,19 @@ body {
 }
 .hero {
   padding: 118px 0;
-  margin-bottom: 60px;
   text-align: center;
   background-color: var(--background-color-header);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 .main-header {
@@ -470,6 +487,21 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .main-header {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    width: 696px;
+  }
 }
 
 .hero-btn {
@@ -557,10 +589,10 @@ body {
 .team-section {
   background-color: var(--background-four-color);
   padding: 60px 0;
-  margin-bottom: 60px;
 }
 
 .team-section__card {
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-text-color-theme-dark);
@@ -593,7 +625,7 @@ body {
 }
 
 .clients-section {
-  margin-bottom: 60px;
+  padding: 60px 0;
 }
 
 .clients-section__list {
@@ -604,13 +636,17 @@ body {
 }
 
 .clients-section__list-item {
-  width: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
 }
-
-.clients-section__list {
-  display: flex;
-  column-gap: 30px;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .clients-section__list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__list-item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list-item-link {
@@ -815,7 +851,6 @@ body {
 @media screen and (max-width: 767px) {
   .filters {
     max-width: 342px;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -862,7 +897,7 @@ body {
   padding: 6px 25px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .cards-portfolio-list {
     display: flex;
     flex-wrap: wrap;

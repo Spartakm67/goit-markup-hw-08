@@ -27,7 +27,7 @@
 
   @media screen and (max-width: 767px) {
     max-width: 342px;
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) {
@@ -76,7 +76,7 @@
 }
 
 .cards-portfolio-list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
