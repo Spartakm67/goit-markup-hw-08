@@ -60,10 +60,6 @@
   padding-bottom: 48px;
 }
 
-.menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
 .mobile-menu__list-link {
   font-weight: 500;
   font-size: 40px;
@@ -87,10 +83,14 @@
 
 .mobile-menu__phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 408px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__mail {
@@ -108,7 +108,7 @@
 
 .mobile-menu__social-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -118,5 +118,9 @@
     margin-left: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: 408px) {
+    font-size: 18px;
   }
 }
